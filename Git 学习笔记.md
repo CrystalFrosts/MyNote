@@ -26,7 +26,7 @@
 
 ---
 
-## 	Git的安装
+## 	Git 的安装
 
 - ### Windows 系统的安装步骤
 
@@ -53,7 +53,7 @@ git config --global user.email "你的邮箱@example.com"
 
 ---
 
-## 创建Git仓库
+## 创建 Git 仓库
 
 假设你要在 `D:\个人文件` 中管理你的笔记
 
@@ -72,7 +72,7 @@ git init
 
 ---
 
-## Git的基础使用案例
+## Git 的基础使用案例
 
 - ###  查看状态（随时可以用）
 
@@ -132,7 +132,7 @@ git init
 
 ---
 
-## 将Git与GitHub连接
+## 将 Git 与 GitHub 连接
 
 1. ### 创建一个 GitHub 仓库
 
