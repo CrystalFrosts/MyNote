@@ -10,11 +10,19 @@
 
 ## 目录
 
-- [Git 的安装](#Git 的安装)
-- [Git 的配置](#Git 的配置 (只做一次))
-- [创建 Git 仓库](#创建 Git 仓库)
-- [Git 的基础使用案例](#Git 的基础使用案例)
-- ......
+[Git 的安装](#Git 的安装)
+
+[Git 的配置](#Git 的配置 (只做一次))
+
+[创建 Git 仓库](#创建 Git 仓库)
+
+[Git 的基础使用案例](#Git 的基础使用案例)
+
+[将 Git 与 GitHub 连接](#将 Git 与 GitHub 连接)
+
+[在不同设备上的使用流程](#在不同设备上的使用流程)
+
+......
 
 ---
 
@@ -121,3 +129,61 @@ git init
      # 放弃某个文件的修改
      git checkout -- 文件名.文件格式
      ```
+
+---
+
+## 将 Git 与 GitHub 连接
+
+1. ### 创建一个 GitHub 仓库
+
+   ```tex
+   Repository name:   我的笔记          ← 仓库名，跟你的本地文件夹名保持一致
+   Description:      我的个人笔记       ← 可选，描述一下
+   Public / Private:  选 Public          ← 公开（免费），Private 也行
+   不要勾选任何东西！❌ README ❌ .gitignore ❌ License
+   ```
+
+2. ### 把本地仓库和 GitHub 连接起来
+
+   ```sh
+   # 告诉 Git，远程仓库地址是哪里
+   git remote add origin https://github.com/你的用户名/我的笔记.git
+   ```
+
+   > *这行命令在 GitHub 仓库创建完成后，页面上会显示*
+
+3. ### 把你的文件推送到 GitHub
+
+   ```sh
+   # 推送（上传）到 GitHub
+   git push -u origin main
+   ```
+
+   > *第一次推送需要登陆，会弹出一个窗口，按步骤登陆即可*
+
+4. ### 在 GitHub 上查看你的仓库
+
+   ```tex
+   https://github.com/你的用户名/我的笔记
+   ```
+
+   （把 `你的用户名` 和 `我的笔记` 换成你自己的）就能查看到了在不同设备上的使用流程
+
+---
+
+## 在不同设备上的使用流程
+
+- ### 只在一台设备上使用 （比如只在家里使用）
+
+  以下是日常使用流程：
+
+  ```sh
+  # 第1步：把所有修改加入暂存
+  git add .
+  # 第2步：提交成一个版本
+  git commit -m "更新了xxx笔记"
+  # 第3步：推送到 GitHub
+  git push
+  ```
+
+  
